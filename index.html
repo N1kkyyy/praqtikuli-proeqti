@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ჩემი ვებპროექტი</title>
+    <title>თანამედროვე ვებპროექტი</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
-        <div class="logo">მოგზაური</div>
+        <div class="logo">Portfolio</div>
         <nav class="nav-menu">
             <a href="#home">მთავარი</a>
             <a href="#about">ჩვენ შესახებ</a>
+            <a href="#services">სერვისები</a>
             <a href="#contact">კონტაქტი</a>
         </nav>
         <div class="burger">
@@ -23,11 +25,48 @@
 
     <main>
         <section id="home" class="hero">
-            <h1>აღმოაჩინე ახალი ჰორიზონტები</h1>
-            <p>შექმენი შენი დაუვიწყარი თავგადასავალი ჩვენთან ერთად.</p>
-            <button class="btn">გაიგე მეტი</button>
+            <h1>აღმოაჩინე ციფრული სამყარო</h1>
+            <p>თანამედროვე, სრულად რესპონსივ ვებგვერდები და ტექნოლოგიური გადაწყვეტილებები.</p>
+            <a href="#about" class="btn">გაიგე მეტი</a>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>ჩვენ შესახებ</h2>
+            <p>ჩვენ ვქმნით მაღალი ხარისხის, სწრაფ და თანამედროვე ვებპროექტებს. ჩვენი მიზანია ტექნოლოგიები ყველასთვის მარტივი და ხელმისაწვდომი გავხადოთ.</p>
+        </section>
+
+        <section id="services" class="services-section">
+            <h2>ჩვენი სერვისები</h2>
+            <div class="services-grid">
+                <div class="card">
+                    <h3>ვებ დიზაინი</h3>
+                    <p>უნიკალური და ესთეტიკური დიზაინი ყველა მოწყობილობისთვის.</p>
+                </div>
+                <div class="card">
+                    <h3>დეველოპმენტი</h3>
+                    <p>სემანტიკური, სუფთა კოდი და სწრაფი მუშაობა.</p>
+                </div>
+                <div class="card">
+                    <h3>ოპტიმიზაცია</h3>
+                    <p>SEO მზაობა და მაქსიმალური სიჩქარე.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>მოგვწერეთ</h2>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="თქვენი სახელი" required>
+                <input type="email" id="email" placeholder="თქვენი ელ-ფოსტა" required>
+                <textarea id="message" placeholder="თქვენი შეტყობინება..." rows="4" required></textarea>
+                <button type="submit" class="btn">გაგზავნა</button>
+            </form>
         </section>
     </main>
+
+    <footer>
+        <p>&copy; 2026 ყველა უფლება დაცულია.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
